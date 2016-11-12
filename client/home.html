@@ -1,0 +1,10 @@
+<template name="home">
+  {{#if currentUser}}
+    <h1>Your Profile</h1>
+  {{else}}
+    <h1>mk team</h1>
+    <p>Tinder for nerds.</p>
+
+    {{> loginButtons}}
+  {{/if}}
+</template>
