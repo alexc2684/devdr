@@ -1,10 +1,24 @@
 <template name="home">
   {{#if currentUser}}
     <h1>Your Profile</h1>
+    {{> profile}}
   {{else}}
     <h1>mk team</h1>
     <p>Tinder for nerds.</p>
 
     {{> loginButtons}}
   {{/if}}
+</template>
+
+<template name="profile">
+    <!-- {{#autoForm collection="UserData" id="userDataForm" type="insert"}}
+      <fieldset>
+        <legend>Profile</legend>
+        {{> afQuickField name='Name'}}
+        {{> afQuickField name='Bio' rows=6}}
+        {{> afQuickField name='copies'}}
+        {{> afQuickField name='lastCheckedOut'}}
+      </fieldset>
+      <button type="submit" class="btn btn-primary">Insert</button>
+    {{/autoForm}} -->
 </template>
