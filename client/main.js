@@ -79,7 +79,11 @@ Template.info.helpers({
 //     instance.counter.set(instance.counter.get() + 1);
 //   },
 // });
-
+Template.home.helpers({
+    equals: function(v1, v2) {
+        return (v1 === v2);
+    }
+});
 Template.home.helpers({
 	'getProfile': function() {
 		// var currId = Meteor.userId();
@@ -115,4 +119,8 @@ Template.home.events({
 		},{upsert: true});
 		Router.go('/matches');
 }
+});
+
+UI.registerHelper('checkedIf', function(val) {
+  return val ? 'checked' : '';
 });
