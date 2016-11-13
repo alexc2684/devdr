@@ -4,6 +4,7 @@ randomColor = require("randomcolor")
 // import { UserData } from '../lib/collections.js';
 import { Session } from 'meteor/session';
 import './main.html';
+
 var matchPage = false
 Template.matchPage.onCreated(function() {
 	this.current = new ReactiveVar(false)
@@ -22,10 +23,25 @@ Template.matchPage.helpers({
 	}
 });
 
+Template.profilePic.onCreated(function() {
+	this.style = new ReactiveVar("line-height: 80px")
+})
+
+Template.profilePic.helpers({
+	style: function() {
+		return Template.instance().style.get()
+	}
+})
+
 Template.profilePic.events({
 	click: function(event, instance) {
 		if(matchPage) {
-			matchPage.current.set(instance.data.color)
+			current = matchPage.current.get()
+			if(current) {
+				current.style.set("line-height: 80px")
+			}
+			matchPage.current.set(instance)
+			instance.style.set("border: 3px solid black;")
 		}
 	}
 })
