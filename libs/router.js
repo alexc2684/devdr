@@ -16,6 +16,6 @@ Router.route('/info', function () {
   this.render('info');
 });
 
-Router.route('/match', function () {
+Router.route('/matches', function () {
   this.render('match');
 });
