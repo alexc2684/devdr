@@ -156,6 +156,9 @@ Template.home.helpers({
 		}
 		console.log(Template.instance().profileData)
 		return Template.instance().profileData
+	},
+	'redirect': function() {
+		Router.go('/profile');
 	}
 });
 
