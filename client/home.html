@@ -11,14 +11,31 @@
 </template>
 
 <template name="profile">
-    <!-- {{#autoForm collection="UserData" id="userDataForm" type="insert"}}
-      <fieldset>
-        <legend>Profile</legend>
-        {{> afQuickField name='Name'}}
-        {{> afQuickField name='Bio' rows=6}}
-        {{> afQuickField name='copies'}}
-        {{> afQuickField name='lastCheckedOut'}}
-      </fieldset>
-      <button type="submit" class="btn btn-primary">Insert</button>
-    {{/autoForm}} -->
+  <!-- {{#autoForm id="afInsertDemo" type="insert" collection=Collections.UserData}}
+    <div class="form-group {{#if afFieldIsInvalid name='Name'}}has-error{{/if}}">
+      <label class="control-label">{{afFieldLabelText name='Name'}}</label>
+      {{> afFieldInput name='Name'}}
+      {{#if afFieldIsInvalid name='Name'}}
+      <span class="help-block">{{{afFieldMessage name='Name'}}}</span>
+      {{/if}}
+    </div>
+    <div class="form-group {{#if afFieldIsInvalid name='Bio'}}has-error{{/if}}">
+      <label class="control-label">{{afFieldLabelText name='Bio'}}</label>
+      {{> afFieldInput name='Bio'}}
+      {{#if afFieldIsInvalid name='Bio'}}
+      <span class="help-block">{{{afFieldMessage name='Bio'}}}</span>
+      {{/if}}
+    </div>
+    <div class="form-group {{#if afFieldIsInvalid name='DevType'}}has-error{{/if}}">
+      <label class="control-label">{{afFieldLabelText name='DevType'}}</label>
+      {{> afFieldInput name='DevType'}}
+      {{#if afFieldIsInvalid name='DevType'}}
+      <span class="help-block">{{{afFieldMessage name='DevType'}}}</span>
+      {{/if}}
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">Add Person</button>
+      <button type="reset" class="btn btn-default">Reset Form</button>
+    </div>
+  {{/autoForm}} -->
 </template>
