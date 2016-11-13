@@ -34,3 +34,7 @@ Meteor.publish('allEmails',function(){
   console.log(UserData.find({},{fields: { name: 1 }}));
   return UserData.find({},{fields: { name: 1 }});
 });
+
+Meteor.publish('user', function() {
+	return Meteor.users.find()
+})

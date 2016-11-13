@@ -1,26 +1,28 @@
 <template name="home">
   {{#if currentUser}}
-    <h1>Your Profile</h1>
-    <div>
-      <form>
-          Name <br />
-          <input type="text" name="name" value="{{getProfile.name}}">  <br/>
-          Bio <br />
-          <input type="text" name="bio" value="{{getProfile.bio}}">  <br/>
-          <input type = "checkbox" name = "myForm" checked={{checkedIf getProfile.devtype.frontend}}>Frontend<br />
-          <input type = "checkbox" name = "myForm" checked={{checkedIf getProfile.devtype.backend}}>Backend<br/>
-          <input type = "checkbox" name = "myForm" value ={{checkedIf getProfile.devtype.fullstack}}>Full Stack <br/>
-          <input type = "checkbox" name = "myForm" value ={{checkedIf getProfile.devtype.datascience}}>Data Science <br/>
-          <input type = "checkbox" name = "myForm" value ={{checkedIf getProfile.devtype.design}}>Design <br/>
-          Skills (Seperate with commas) <br />
-          <input type="text" name="skills" value="{{getProfile.skills}}">  <br/>
-          Interests (Seperate with commas) <br />
-          <input type="text" name="interests" value="{{getProfile.interests}}">  <br/>
-          Github <br />
-          <input type="text" name="github" value="{{getProfile.github}}">  <br/>
-          <input type="submit" value="Save Profile">
-      </form>
-    </div>
+    {{#if Template.subscriptionsReady}}
+      <h1>Your Profile</h1>
+      <div>
+        <form>
+            Name <br />
+            <input type="text" name="name" value="{{getProfile.name}}">  <br/>
+            Bio <br />
+            <input type="text" name="bio" value="{{getProfile.bio}}">  <br/>
+            <input type = "checkbox" name = "myForm" {{checkedIf getProfile.devtype.frontend}}>Frontend<br />
+            <input type = "checkbox" name = "myForm" {{checkedIf getProfile.devtype.backend}}>Backend<br/>
+            <input type = "checkbox" name = "myForm" {{checkedIf getProfile.devtype.fullstack}}>Full Stack <br/>
+            <input type = "checkbox" name = "myForm" {{checkedIf getProfile.devtype.datascience}}>Data Science <br/>
+            <input type = "checkbox" name = "myForm" {{checkedIf getProfile.devtype.design}}>Design <br/>
+            Skills (Seperate with commas) <br />
+            <input type="text" name="skills" value="{{getProfile.skills}}">  <br/>
+            Interests (Seperate with commas) <br />
+            <input type="text" name="interests" value="{{getProfile.interests}}">  <br/>
+            Github <br />
+            <input type="text" name="github" value="{{getProfile.github}}">  <br/>
+            <input type="submit" value="Save Profile">
+        </form>
+      </div>
+    {{/if}}
   {{else}}
     <h1>mk team</h1>
     <p>Tinder for nerds.</p>
