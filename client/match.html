@@ -1,14 +1,11 @@
 <template name="matchPage">
-	{{current}}
 	{{#each users}}
 		{{> profilePic color=color letter="J"}}
 	{{/each}}
-	<br>
-	{{> test hi='["hello", "hi"]'}}
 </template>
 
 <template name="profilePic">
-	<span class="circle" style="background-color: {{color}};">
+	<span class="circle" style="background-color: {{color}}; {{style}}">
 		{{letter}}
 	</span>
 </template>
