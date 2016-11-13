@@ -4,20 +4,20 @@
     <div>
       <form>
           Name <br />
-          <input type="text" name="name" placeholder="{{getProfile.name}}">  <br/>
+          <input type="text" name="name" value="{{getProfile.name}}">  <br/>
           Bio <br />
-          <input type="text" name="bio" placeholder="{{getProfile.bio}}">  <br/>
-          <input type = "checkbox" name = "myForm" value = "frontend" placeholder="{{getProfile.devtype[frontend]}}">Frontend <br />
-          <input type = "checkbox" name = "myForm" value = "backend" placeholder="{{getProfile.devtype[backend]}}">Backend<br/>
-          <input type = "checkbox" name = "myForm" value = "fullstack" placeholder="{{getProfile.devtype[fullstack]}}">Full Stack <br/>
-          <input type = "checkbox" name = "myForm" value = "datascience" placeholder="{{getProfile.devtype[datascience]}}">Data Science <br/>
-          <input type = "checkbox" name = "myForm" value = "design" placeholder="{{getProfile.devtype[design]}}">Design <br/>
+          <input type="text" name="bio" value="{{getProfile.bio}}">  <br/>
+          <input type = "checkbox" name = "myForm" checked={{checkedIf getProfile.devtype.frontend}}>Frontend<br />
+          <input type = "checkbox" name = "myForm" checked={{checkedIf getProfile.devtype.backend}}>Backend<br/>
+          <input type = "checkbox" name = "myForm" value ={{checkedIf getProfile.devtype.fullstack}}>Full Stack <br/>
+          <input type = "checkbox" name = "myForm" value ={{checkedIf getProfile.devtype.datascience}}>Data Science <br/>
+          <input type = "checkbox" name = "myForm" value ={{checkedIf getProfile.devtype.design}}>Design <br/>
           Skills (Seperate with commas) <br />
-          <input type="text" name="skills" placeholder="{{getProfile.skills}}">  <br/>
+          <input type="text" name="skills" value="{{getProfile.skills}}">  <br/>
           Interests (Seperate with commas) <br />
-          <input type="text" name="interests" placeholder="{{getProfile.interests}}">  <br/>
+          <input type="text" name="interests" value="{{getProfile.interests}}">  <br/>
           Github <br />
-          <input type="text" name="github" placeholder="{{getProfile.github}}">  <br/>
+          <input type="text" name="github" value="{{getProfile.github}}">  <br/>
           <input type="submit" value="Save Profile">
       </form>
     </div>
