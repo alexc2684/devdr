@@ -55,10 +55,10 @@ Template.test.helpers({
 Meteor.subscribe('allEmails');
 
 Template.info.helpers({
-  allUsers(){ 
+  allUsers(){
   	console.log(UserData.find({}));
   	return UserData.find({}); },
-  email(){ 
+  email(){
   	console.log(this);
   	return this.name; }
 });
@@ -93,7 +93,11 @@ Template.home.events({
 	'submit form': function(event){
 		console.log("Submitted");
 		event.preventDefault();
-		UserData.insert({
+		console.log(Meteor.userId());
+		var id = Meteor.userId();
+		console.log(id);
+
+		UserData.update({_id: id}, {$set: {
 				name: event.target.name.value,
 				bio: event.target.bio.value,
 				devtype: {
@@ -106,6 +110,8 @@ Template.home.events({
 				skills: event.target.skills.value.split(", "),
 				interests: event.target.interests.value.split(", "),
 				github: event.target.github.value,
-		});
+			}
+		},{upsert: true});
+		Router.go('/matches');
 }
 });
