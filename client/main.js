@@ -84,8 +84,9 @@ Template.home.helpers({
 	'getProfile': function() {
 		// var currId = Meteor.userId();
 		// console.log(currId);
-		console.log(Meteor.UserData.find());
-		return UserData.find({_id: "dpmYyXkHm2CjmTWpT"});
+		var id = Meteor.userId();
+		console.log(UserData.findOne({_id: id}));
+		return UserData.findOne({_id: id});
 	}
 });
 
