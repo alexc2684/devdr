@@ -25,33 +25,33 @@
 13 silly mapToRegistry uri https://registry.npmjs.org/bcrypt
 14 verbose request uri https://registry.npmjs.org/bcrypt
 15 verbose request no auth needed
-16 info attempt registry request try #1 at 4:26:47 PM
-17 verbose request id 62ebf1f8b38c180a
+16 info attempt registry request try #1 at 4:31:13 PM
+17 verbose request id 6f6e2b985d4691fc
 18 verbose etag "5825b7ea-14213"
 19 http request GET https://registry.npmjs.org/bcrypt
 20 http 304 https://registry.npmjs.org/bcrypt
-21 verbose headers { date: 'Sun, 13 Nov 2016 00:26:47 GMT',
+21 verbose headers { date: 'Sun, 13 Nov 2016 00:31:12 GMT',
 21 verbose headers   via: '1.1 varnish',
 21 verbose headers   'cache-control': 'max-age=300',
 21 verbose headers   etag: '"5825b7ea-14213"',
-21 verbose headers   age: '0',
+21 verbose headers   age: '266',
 21 verbose headers   connection: 'keep-alive',
-21 verbose headers   'x-served-by': 'cache-sjc3635-SJC',
+21 verbose headers   'x-served-by': 'cache-sjc3647-SJC',
 21 verbose headers   'x-cache': 'HIT',
 21 verbose headers   'x-cache-hits': '1',
-21 verbose headers   'x-timer': 'S1478996807.183854,VS0,VE150',
+21 verbose headers   'x-timer': 'S1478997072.879875,VS0,VE0',
 21 verbose headers   vary: 'Accept-Encoding' }
 22 silly get cb [ 304,
-22 silly get   { date: 'Sun, 13 Nov 2016 00:26:47 GMT',
+22 silly get   { date: 'Sun, 13 Nov 2016 00:31:12 GMT',
 22 silly get     via: '1.1 varnish',
 22 silly get     'cache-control': 'max-age=300',
 22 silly get     etag: '"5825b7ea-14213"',
-22 silly get     age: '0',
+22 silly get     age: '266',
 22 silly get     connection: 'keep-alive',
-22 silly get     'x-served-by': 'cache-sjc3635-SJC',
+22 silly get     'x-served-by': 'cache-sjc3647-SJC',
 22 silly get     'x-cache': 'HIT',
 22 silly get     'x-cache-hits': '1',
-22 silly get     'x-timer': 'S1478996807.183854,VS0,VE150',
+22 silly get     'x-timer': 'S1478997072.879875,VS0,VE0',
 22 silly get     vary: 'Accept-Encoding' } ]
 23 verbose etag https://registry.npmjs.org/bcrypt from cache
 24 verbose get saving bcrypt to /Users/alexchan/.meteor/packages/meteor-tool/.1.4.2_1.ady4ki++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/.npm/registry.npmjs.org/bcrypt/.cache.json
@@ -131,130 +131,130 @@
 70 silly mapToRegistry uri https://registry.npmjs.org/nan
 71 verbose request uri https://registry.npmjs.org/bindings
 72 verbose request no auth needed
-73 info attempt registry request try #1 at 4:26:48 PM
+73 info attempt registry request try #1 at 4:31:13 PM
 74 verbose etag "580645d3-46f7"
 75 http request GET https://registry.npmjs.org/bindings
 76 verbose request uri https://registry.npmjs.org/nan
 77 verbose request no auth needed
-78 info attempt registry request try #1 at 4:26:48 PM
+78 info attempt registry request try #1 at 4:31:13 PM
 79 verbose etag "5818d749-1ce1e"
 80 http request GET https://registry.npmjs.org/nan
-81 http 304 https://registry.npmjs.org/bindings
-82 verbose headers { date: 'Sun, 13 Nov 2016 00:26:47 GMT',
+81 http 304 https://registry.npmjs.org/nan
+82 verbose headers { date: 'Sun, 13 Nov 2016 00:31:13 GMT',
 82 verbose headers   via: '1.1 varnish',
 82 verbose headers   'cache-control': 'max-age=300',
-82 verbose headers   etag: '"580645d3-46f7"',
-82 verbose headers   age: '52',
+82 verbose headers   etag: '"5818d749-1ce1e"',
+82 verbose headers   age: '3',
 82 verbose headers   connection: 'keep-alive',
-82 verbose headers   'x-served-by': 'cache-sjc3635-SJC',
+82 verbose headers   'x-served-by': 'cache-sjc3126-SJC',
 82 verbose headers   'x-cache': 'HIT',
 82 verbose headers   'x-cache-hits': '1',
-82 verbose headers   'x-timer': 'S1478996807.443103,VS0,VE0',
+82 verbose headers   'x-timer': 'S1478997073.005540,VS0,VE0',
 82 verbose headers   vary: 'Accept-Encoding' }
 83 silly get cb [ 304,
-83 silly get   { date: 'Sun, 13 Nov 2016 00:26:47 GMT',
+83 silly get   { date: 'Sun, 13 Nov 2016 00:31:13 GMT',
 83 silly get     via: '1.1 varnish',
 83 silly get     'cache-control': 'max-age=300',
-83 silly get     etag: '"580645d3-46f7"',
-83 silly get     age: '52',
+83 silly get     etag: '"5818d749-1ce1e"',
+83 silly get     age: '3',
 83 silly get     connection: 'keep-alive',
-83 silly get     'x-served-by': 'cache-sjc3635-SJC',
+83 silly get     'x-served-by': 'cache-sjc3126-SJC',
 83 silly get     'x-cache': 'HIT',
 83 silly get     'x-cache-hits': '1',
-83 silly get     'x-timer': 'S1478996807.443103,VS0,VE0',
+83 silly get     'x-timer': 'S1478997073.005540,VS0,VE0',
 83 silly get     vary: 'Accept-Encoding' } ]
-84 verbose etag https://registry.npmjs.org/bindings from cache
-85 verbose get saving bindings to /Users/alexchan/.meteor/packages/meteor-tool/.1.4.2_1.ady4ki++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/.npm/registry.npmjs.org/bindings/.cache.json
+84 verbose etag https://registry.npmjs.org/nan from cache
+85 verbose get saving nan to /Users/alexchan/.meteor/packages/meteor-tool/.1.4.2_1.ady4ki++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/.npm/registry.npmjs.org/nan/.cache.json
 86 verbose correctMkdir /Users/alexchan/.meteor/packages/meteor-tool/.1.4.2_1.ady4ki++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/.npm correctMkdir not in flight; initializing
-87 silly resolveWithNewModule bindings@1.2.1 checking installable status
-88 silly cache add args [ 'bindings@1.2.1', null ]
-89 verbose cache add spec bindings@1.2.1
+87 silly resolveWithNewModule nan@2.3.5 checking installable status
+88 silly cache add args [ 'nan@2.3.5', null ]
+89 verbose cache add spec nan@2.3.5
 90 silly cache add parsed spec Result {
-90 silly cache add   raw: 'bindings@1.2.1',
+90 silly cache add   raw: 'nan@2.3.5',
 90 silly cache add   scope: null,
-90 silly cache add   escapedName: 'bindings',
-90 silly cache add   name: 'bindings',
-90 silly cache add   rawSpec: '1.2.1',
-90 silly cache add   spec: '1.2.1',
+90 silly cache add   escapedName: 'nan',
+90 silly cache add   name: 'nan',
+90 silly cache add   rawSpec: '2.3.5',
+90 silly cache add   spec: '2.3.5',
 90 silly cache add   type: 'version' }
-91 silly addNamed bindings@1.2.1
-92 verbose addNamed "1.2.1" is a plain semver version for bindings
-93 silly mapToRegistry name bindings
+91 silly addNamed nan@2.3.5
+92 verbose addNamed "2.3.5" is a plain semver version for nan
+93 silly mapToRegistry name nan
 94 silly mapToRegistry using default registry
 95 silly mapToRegistry registry https://registry.npmjs.org/
 96 silly mapToRegistry data Result {
-96 silly mapToRegistry   raw: 'bindings',
+96 silly mapToRegistry   raw: 'nan',
 96 silly mapToRegistry   scope: null,
-96 silly mapToRegistry   escapedName: 'bindings',
-96 silly mapToRegistry   name: 'bindings',
+96 silly mapToRegistry   escapedName: 'nan',
+96 silly mapToRegistry   name: 'nan',
 96 silly mapToRegistry   rawSpec: '',
 96 silly mapToRegistry   spec: 'latest',
 96 silly mapToRegistry   type: 'tag' }
-97 silly mapToRegistry uri https://registry.npmjs.org/bindings
-98 verbose addNameVersion registry:https://registry.npmjs.org/bindings not in flight; fetching
-99 verbose get https://registry.npmjs.org/bindings not expired, no request
-100 silly cache afterAdd bindings@1.2.1
-101 verbose afterAdd /Users/alexchan/.meteor/packages/meteor-tool/.1.4.2_1.ady4ki++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/.npm/bindings/1.2.1/package/package.json not in flight; writing
+97 silly mapToRegistry uri https://registry.npmjs.org/nan
+98 verbose addNameVersion registry:https://registry.npmjs.org/nan not in flight; fetching
+99 verbose get https://registry.npmjs.org/nan not expired, no request
+100 silly cache afterAdd nan@2.3.5
+101 verbose afterAdd /Users/alexchan/.meteor/packages/meteor-tool/.1.4.2_1.ady4ki++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/.npm/nan/2.3.5/package/package.json not in flight; writing
 102 verbose correctMkdir /Users/alexchan/.meteor/packages/meteor-tool/.1.4.2_1.ady4ki++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/.npm correctMkdir not in flight; initializing
-103 verbose afterAdd /Users/alexchan/.meteor/packages/meteor-tool/.1.4.2_1.ady4ki++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/.npm/bindings/1.2.1/package/package.json written
-104 http 304 https://registry.npmjs.org/nan
-105 verbose headers { date: 'Sun, 13 Nov 2016 00:26:47 GMT',
+103 verbose afterAdd /Users/alexchan/.meteor/packages/meteor-tool/.1.4.2_1.ady4ki++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/.npm/nan/2.3.5/package/package.json written
+104 http 304 https://registry.npmjs.org/bindings
+105 verbose headers { date: 'Sun, 13 Nov 2016 00:31:12 GMT',
 105 verbose headers   via: '1.1 varnish',
 105 verbose headers   'cache-control': 'max-age=300',
-105 verbose headers   etag: '"5818d749-1ce1e"',
-105 verbose headers   age: '55',
+105 verbose headers   etag: '"580645d3-46f7"',
+105 verbose headers   age: '0',
 105 verbose headers   connection: 'keep-alive',
-105 verbose headers   'x-served-by': 'cache-sjc3646-SJC',
+105 verbose headers   'x-served-by': 'cache-sjc3647-SJC',
 105 verbose headers   'x-cache': 'HIT',
 105 verbose headers   'x-cache-hits': '1',
-105 verbose headers   'x-timer': 'S1478996807.472036,VS0,VE0',
+105 verbose headers   'x-timer': 'S1478997072.986167,VS0,VE130',
 105 verbose headers   vary: 'Accept-Encoding' }
 106 silly get cb [ 304,
-106 silly get   { date: 'Sun, 13 Nov 2016 00:26:47 GMT',
+106 silly get   { date: 'Sun, 13 Nov 2016 00:31:12 GMT',
 106 silly get     via: '1.1 varnish',
 106 silly get     'cache-control': 'max-age=300',
-106 silly get     etag: '"5818d749-1ce1e"',
-106 silly get     age: '55',
+106 silly get     etag: '"580645d3-46f7"',
+106 silly get     age: '0',
 106 silly get     connection: 'keep-alive',
-106 silly get     'x-served-by': 'cache-sjc3646-SJC',
+106 silly get     'x-served-by': 'cache-sjc3647-SJC',
 106 silly get     'x-cache': 'HIT',
 106 silly get     'x-cache-hits': '1',
-106 silly get     'x-timer': 'S1478996807.472036,VS0,VE0',
+106 silly get     'x-timer': 'S1478997072.986167,VS0,VE130',
 106 silly get     vary: 'Accept-Encoding' } ]
-107 verbose etag https://registry.npmjs.org/nan from cache
-108 verbose get saving nan to /Users/alexchan/.meteor/packages/meteor-tool/.1.4.2_1.ady4ki++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/.npm/registry.npmjs.org/nan/.cache.json
+107 verbose etag https://registry.npmjs.org/bindings from cache
+108 verbose get saving bindings to /Users/alexchan/.meteor/packages/meteor-tool/.1.4.2_1.ady4ki++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/.npm/registry.npmjs.org/bindings/.cache.json
 109 verbose correctMkdir /Users/alexchan/.meteor/packages/meteor-tool/.1.4.2_1.ady4ki++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/.npm correctMkdir not in flight; initializing
-110 silly resolveWithNewModule nan@2.3.5 checking installable status
-111 silly cache add args [ 'nan@2.3.5', null ]
-112 verbose cache add spec nan@2.3.5
+110 silly resolveWithNewModule bindings@1.2.1 checking installable status
+111 silly cache add args [ 'bindings@1.2.1', null ]
+112 verbose cache add spec bindings@1.2.1
 113 silly cache add parsed spec Result {
-113 silly cache add   raw: 'nan@2.3.5',
+113 silly cache add   raw: 'bindings@1.2.1',
 113 silly cache add   scope: null,
-113 silly cache add   escapedName: 'nan',
-113 silly cache add   name: 'nan',
-113 silly cache add   rawSpec: '2.3.5',
-113 silly cache add   spec: '2.3.5',
+113 silly cache add   escapedName: 'bindings',
+113 silly cache add   name: 'bindings',
+113 silly cache add   rawSpec: '1.2.1',
+113 silly cache add   spec: '1.2.1',
 113 silly cache add   type: 'version' }
-114 silly addNamed nan@2.3.5
-115 verbose addNamed "2.3.5" is a plain semver version for nan
-116 silly mapToRegistry name nan
+114 silly addNamed bindings@1.2.1
+115 verbose addNamed "1.2.1" is a plain semver version for bindings
+116 silly mapToRegistry name bindings
 117 silly mapToRegistry using default registry
 118 silly mapToRegistry registry https://registry.npmjs.org/
 119 silly mapToRegistry data Result {
-119 silly mapToRegistry   raw: 'nan',
+119 silly mapToRegistry   raw: 'bindings',
 119 silly mapToRegistry   scope: null,
-119 silly mapToRegistry   escapedName: 'nan',
-119 silly mapToRegistry   name: 'nan',
+119 silly mapToRegistry   escapedName: 'bindings',
+119 silly mapToRegistry   name: 'bindings',
 119 silly mapToRegistry   rawSpec: '',
 119 silly mapToRegistry   spec: 'latest',
 119 silly mapToRegistry   type: 'tag' }
-120 silly mapToRegistry uri https://registry.npmjs.org/nan
-121 verbose addNameVersion registry:https://registry.npmjs.org/nan not in flight; fetching
-122 verbose get https://registry.npmjs.org/nan not expired, no request
-123 silly cache afterAdd nan@2.3.5
-124 verbose afterAdd /Users/alexchan/.meteor/packages/meteor-tool/.1.4.2_1.ady4ki++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/.npm/nan/2.3.5/package/package.json not in flight; writing
+120 silly mapToRegistry uri https://registry.npmjs.org/bindings
+121 verbose addNameVersion registry:https://registry.npmjs.org/bindings not in flight; fetching
+122 verbose get https://registry.npmjs.org/bindings not expired, no request
+123 silly cache afterAdd bindings@1.2.1
+124 verbose afterAdd /Users/alexchan/.meteor/packages/meteor-tool/.1.4.2_1.ady4ki++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/.npm/bindings/1.2.1/package/package.json not in flight; writing
 125 verbose correctMkdir /Users/alexchan/.meteor/packages/meteor-tool/.1.4.2_1.ady4ki++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/.npm correctMkdir not in flight; initializing
-126 verbose afterAdd /Users/alexchan/.meteor/packages/meteor-tool/.1.4.2_1.ady4ki++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/.npm/nan/2.3.5/package/package.json written
+126 verbose afterAdd /Users/alexchan/.meteor/packages/meteor-tool/.1.4.2_1.ady4ki++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/.npm/bindings/1.2.1/package/package.json written
 127 silly loadAllDepsIntoIdealTree Finishing
 128 silly loadIdealTree Finishing
 129 silly currentTree mk-team@
@@ -439,23 +439,23 @@
 171 silly extract bindings@1.2.1
 172 silly extract nan@2.3.5
 173 silly extract bcrypt@0.8.7
-174 verbose unbuild node_modules/.staging/nan-ae7d3fad
-175 verbose unbuild node_modules/.staging/bindings-ff02a23b
+174 verbose unbuild node_modules/.staging/bindings-ff02a23b
+175 verbose unbuild node_modules/.staging/nan-ae7d3fad
 176 verbose unbuild node_modules/.staging/bcrypt-bea53dca
-177 silly gentlyRm /Users/alexchan/Documents/cs/mk-team/node_modules/.staging/nan-ae7d3fad is being purged from base /Users/alexchan/Documents/cs/mk-team
-178 verbose gentlyRm don't care about contents; nuking /Users/alexchan/Documents/cs/mk-team/node_modules/.staging/nan-ae7d3fad
-179 silly gentlyRm /Users/alexchan/Documents/cs/mk-team/node_modules/.staging/bindings-ff02a23b is being purged from base /Users/alexchan/Documents/cs/mk-team
-180 verbose gentlyRm don't care about contents; nuking /Users/alexchan/Documents/cs/mk-team/node_modules/.staging/bindings-ff02a23b
+177 silly gentlyRm /Users/alexchan/Documents/cs/mk-team/node_modules/.staging/bindings-ff02a23b is being purged from base /Users/alexchan/Documents/cs/mk-team
+178 verbose gentlyRm don't care about contents; nuking /Users/alexchan/Documents/cs/mk-team/node_modules/.staging/bindings-ff02a23b
+179 silly gentlyRm /Users/alexchan/Documents/cs/mk-team/node_modules/.staging/nan-ae7d3fad is being purged from base /Users/alexchan/Documents/cs/mk-team
+180 verbose gentlyRm don't care about contents; nuking /Users/alexchan/Documents/cs/mk-team/node_modules/.staging/nan-ae7d3fad
 181 silly gentlyRm /Users/alexchan/Documents/cs/mk-team/node_modules/.staging/bcrypt-bea53dca is being purged from base /Users/alexchan/Documents/cs/mk-team
 182 verbose gentlyRm don't care about contents; nuking /Users/alexchan/Documents/cs/mk-team/node_modules/.staging/bcrypt-bea53dca
-183 verbose tar unpack /Users/alexchan/.meteor/packages/meteor-tool/.1.4.2_1.ady4ki++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/.npm/nan/2.3.5/package.tgz
-184 verbose tar unpacking to /Users/alexchan/Documents/cs/mk-team/node_modules/.staging/nan-ae7d3fad
-185 silly gentlyRm /Users/alexchan/Documents/cs/mk-team/node_modules/.staging/nan-ae7d3fad is being purged
-186 verbose gentlyRm don't care about contents; nuking /Users/alexchan/Documents/cs/mk-team/node_modules/.staging/nan-ae7d3fad
-187 verbose tar unpack /Users/alexchan/.meteor/packages/meteor-tool/.1.4.2_1.ady4ki++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/.npm/bindings/1.2.1/package.tgz
-188 verbose tar unpacking to /Users/alexchan/Documents/cs/mk-team/node_modules/.staging/bindings-ff02a23b
-189 silly gentlyRm /Users/alexchan/Documents/cs/mk-team/node_modules/.staging/bindings-ff02a23b is being purged
-190 verbose gentlyRm don't care about contents; nuking /Users/alexchan/Documents/cs/mk-team/node_modules/.staging/bindings-ff02a23b
+183 verbose tar unpack /Users/alexchan/.meteor/packages/meteor-tool/.1.4.2_1.ady4ki++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/.npm/bindings/1.2.1/package.tgz
+184 verbose tar unpacking to /Users/alexchan/Documents/cs/mk-team/node_modules/.staging/bindings-ff02a23b
+185 silly gentlyRm /Users/alexchan/Documents/cs/mk-team/node_modules/.staging/bindings-ff02a23b is being purged
+186 verbose gentlyRm don't care about contents; nuking /Users/alexchan/Documents/cs/mk-team/node_modules/.staging/bindings-ff02a23b
+187 verbose tar unpack /Users/alexchan/.meteor/packages/meteor-tool/.1.4.2_1.ady4ki++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/.npm/nan/2.3.5/package.tgz
+188 verbose tar unpacking to /Users/alexchan/Documents/cs/mk-team/node_modules/.staging/nan-ae7d3fad
+189 silly gentlyRm /Users/alexchan/Documents/cs/mk-team/node_modules/.staging/nan-ae7d3fad is being purged
+190 verbose gentlyRm don't care about contents; nuking /Users/alexchan/Documents/cs/mk-team/node_modules/.staging/nan-ae7d3fad
 191 verbose tar unpack /Users/alexchan/.meteor/packages/meteor-tool/.1.4.2_1.ady4ki++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/.npm/bcrypt/0.8.7/package.tgz
 192 verbose tar unpacking to /Users/alexchan/Documents/cs/mk-team/node_modules/.staging/bcrypt-bea53dca
 193 silly gentlyRm /Users/alexchan/Documents/cs/mk-team/node_modules/.staging/bcrypt-bea53dca is being purged
@@ -464,40 +464,40 @@
 196 silly gunzTarPerm modes [ '755', '644' ]
 197 silly gunzTarPerm modes [ '755', '644' ]
 198 silly gunzTarPerm extractEntry package.json
-199 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
-200 silly gunzTarPerm extractEntry package.json
+199 silly gunzTarPerm extractEntry package.json
+200 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
 201 silly gunzTarPerm extractEntry package.json
 202 silly gunzTarPerm extractEntry README.md
-203 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+203 silly gunzTarPerm extractEntry bindings.js
 204 silly gunzTarPerm extractEntry README.md
-205 silly gunzTarPerm extractEntry bindings.js
+205 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
 206 silly gunzTarPerm extractEntry include_dirs.js
 207 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 420 ]
 208 silly gunzTarPerm extractEntry .npmignore
 209 silly gunzTarPerm extractEntry README.md
-210 silly gunzTarPerm extractEntry nan_converters.h
-211 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 420 ]
-212 silly gunzTarPerm extractEntry LICENSE.md
-213 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 420 ]
-214 silly gunzTarPerm extractEntry doc/node_misc.md
-215 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 420 ]
-216 silly gunzTarPerm extractEntry LICENSE
-217 silly gunzTarPerm extractEntry bcrypt.js
-218 silly gunzTarPerm extractEntry Makefile
-219 silly gunzTarPerm extractEntry .travis.yml
-220 silly gunzTarPerm extractEntry CHANGELOG.md
-221 silly gunzTarPerm extractEntry binding.gyp
-222 silly gunzTarPerm extractEntry examples/async_compare.js
-223 silly gunzTarPerm extractEntry examples/forever_gen_salt.js
-224 silly gunzTarPerm extractEntry test/async.js
-225 silly gunzTarPerm extractEntry test/repetitions.js
-226 silly gunzTarPerm extractEntry test/sync.js
-227 silly gunzTarPerm extractEntry ISSUE_TEMPLATE.md
-228 silly gunzTarPerm extractEntry src/bcrypt.cc
-229 silly gunzTarPerm extractEntry src/bcrypt_node.cc
-230 silly gunzTarPerm extractEntry src/blowfish.cc
-231 silly gunzTarPerm extractEntry src/node_blf.h
-232 silly gunzTarPerm extractEntry werker.yml
+210 silly gunzTarPerm extractEntry LICENSE
+211 silly gunzTarPerm extractEntry bcrypt.js
+212 silly gunzTarPerm extractEntry Makefile
+213 silly gunzTarPerm extractEntry .travis.yml
+214 silly gunzTarPerm extractEntry CHANGELOG.md
+215 silly gunzTarPerm extractEntry binding.gyp
+216 silly gunzTarPerm extractEntry examples/async_compare.js
+217 silly gunzTarPerm extractEntry examples/forever_gen_salt.js
+218 silly gunzTarPerm extractEntry test/async.js
+219 silly gunzTarPerm extractEntry test/repetitions.js
+220 silly gunzTarPerm extractEntry test/sync.js
+221 silly gunzTarPerm extractEntry ISSUE_TEMPLATE.md
+222 silly gunzTarPerm extractEntry src/bcrypt.cc
+223 silly gunzTarPerm extractEntry src/bcrypt_node.cc
+224 silly gunzTarPerm extractEntry src/blowfish.cc
+225 silly gunzTarPerm extractEntry src/node_blf.h
+226 silly gunzTarPerm extractEntry werker.yml
+227 silly gunzTarPerm extractEntry nan_converters.h
+228 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 420 ]
+229 silly gunzTarPerm extractEntry LICENSE.md
+230 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 420 ]
+231 silly gunzTarPerm extractEntry doc/node_misc.md
+232 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 420 ]
 233 silly gunzTarPerm extractEntry doc/asyncworker.md
 234 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 420 ]
 235 silly gunzTarPerm extractEntry doc/callback.md
