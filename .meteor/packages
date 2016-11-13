@@ -29,3 +29,4 @@ aldeed:collection2
 accounts-password
 npm-bcrypt@0.8.7
 ian:accounts-ui-bootstrap-3
+accounts-base
