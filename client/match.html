@@ -1,6 +1,20 @@
-<template name="match">
+<template name="matchPage">
+	{{current}}
 	{{#each users}}
-		{{_id}}
-		<br/>
-		{{/each}}
+		{{> profilePic color=color letter="J"}}
+	{{/each}}
+	<br>
+	{{> test hi='["hello", "hi"]'}}
+</template>
+
+<template name="profilePic">
+	<span class="circle" style="background-color: {{color}};">
+		{{letter}}
+	</span>
+</template>
+
+<template name="test">
+	{{#each parse hi}}
+		{{this}}
+	{{/each}}
 </template>

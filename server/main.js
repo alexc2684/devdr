@@ -1,4 +1,5 @@
 import { Meteor } from 'meteor/meteor';
+var randomColor = require("randomcolor")
 import { Session } from 'meteor/session';
 
 Meteor.startup(() => {
@@ -11,6 +12,7 @@ Meteor.startup(() => {
 Accounts.onCreateUser((options, user) => {
 	var userObject = {
 		name: "",
+		color: randomColor(),
 		bio: "",
 		devtype: {
 			frontend: false,
