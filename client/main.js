@@ -3,6 +3,12 @@ import { ReactiveVar } from 'meteor/reactive-var';
 
 import './main.html';
 
+Template.match.helpers({
+	users: function() {
+		return Meteor.users.find()
+	}
+})
+
 Template.hello.onCreated(function helloOnCreated() {
   // counter starts at 0
   this.counter = new ReactiveVar(0);
