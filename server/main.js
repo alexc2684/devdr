@@ -1,16 +1,14 @@
 import { Meteor } from 'meteor/meteor';
+import { Session } from 'meteor/session';
 
 Meteor.startup(() => {
-  // code to run on server at startup
+  var currentProfile = {}
+  Meteor.publish('data', function(){
+      return UserData.find();
+  });
 });
 
 Accounts.onCreateUser((options, user) => {
-  // if (! user.services.github) {
-  //   throw new Error('Expected login with Facebook only.');
-  // }
-
-  // const { first_name, last_name } = user.services.facebook;
-  // user.UserD = first_name[0].toUpperCase() + last_name[0].toUpperCase();
 	var userObject = {
 		name: "",
 		bio: "",
@@ -26,7 +24,5 @@ Accounts.onCreateUser((options, user) => {
 		github: ""
 	}
 	user.userId = UserData.insert(userObject);
-  return user
-  // Don't forget to return the new user object at the end!
-  // return user;
+  return user;
 });

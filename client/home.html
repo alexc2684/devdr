@@ -1,7 +1,26 @@
 <template name="home">
   {{#if currentUser}}
     <h1>Your Profile</h1>
-    {{> profile}}
+    <div>
+      <form>
+          Name <br />
+          <input type="text" name="name">  <br/>
+          Bio <br />
+          <input type="text" name="bio">  <br/>
+          <input type = "checkbox" name = "myForm" value = "frontend">Frontend <br />
+          <input type = "checkbox" name = "myForm" value = "backend">Backend<br/>
+          <input type = "checkbox" name = "myForm" value = "fullstack">Full Stack <br/>
+          <input type = "checkbox" name = "myForm" value = "datascience">Data Science <br/>
+          <input type = "checkbox" name = "myForm" value = "design">Design <br/>
+          Skills (Seperate with commas) <br />
+          <input type="text" name="skills">  <br/>
+          Interests (Seperate with commas) <br />
+          <input type="text" name="interests">  <br/>
+          Github <br />
+          <input type="text" name="github">  <br/>
+          <input type="submit" value="Save Profile">
+      </form>
+    </div>
   {{else}}
     <h1>mk team</h1>
     <p>Tinder for nerds.</p>
@@ -9,8 +28,16 @@
     {{> loginButtons}}
   {{/if}}
 </template>
+<!--
+<template name="profileForm">
+
+</template> -->
+
 
 <template name="profile">
+  <p>
+    Welcome {{getProfile}}
+  </p>
   <!-- {{#autoForm id="afInsertDemo" type="insert" collection=Collections.UserData}}
     <div class="form-group {{#if afFieldIsInvalid name='Name'}}has-error{{/if}}">
       <label class="control-label">{{afFieldLabelText name='Name'}}</label>
