@@ -1,5 +1,6 @@
 <template name="info">
-{{#each allUsers}}
-    <input id="mail" type="text" value="{{email}}" />
-  {{/each}}
+	{{#if Template.subscriptionsReady}}
+		{{getNext}}
+	    {{> card name=name interests=(json interests)}}
+	{{/if}}
 </template>
