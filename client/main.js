@@ -79,6 +79,12 @@ Template.info.helpers({
 //     instance.counter.set(instance.counter.get() + 1);
 //   },
 // });
+Template.home.onCreated(function() {
+	this.autorun(() => {
+    	this.subscribe('user')
+  	});
+	this.profileData = null
+})
 Template.home.helpers({
     equals: function(v1, v2) {
         return (v1 === v2);
@@ -88,18 +94,20 @@ Template.home.helpers({
 	'getProfile': function() {
 		// var currId = Meteor.userId();
 		// console.log(currId);
-		var id = Meteor.userId();
-		console.log(UserData.findOne({_id: id}));
-		return UserData.findOne({_id: id});
+		if(!Template.instance().profileData) {
+			var id = Meteor.users.findOne(Meteor.userId()).userId;
+			Template.instance().profileData = UserData.findOne({_id: id})
+		}
+		console.log(Template.instance().profileData)
+		return Template.instance().profileData
 	}
 });
 
 Template.home.events({
-	'submit form': function(event){
+	'submit form': function(event, instance){
 		console.log("Submitted");
 		event.preventDefault();
-		console.log(Meteor.userId());
-		var id = Meteor.userId();
+		var id = instance.profileData._id
 		console.log(id);
 
 		UserData.update({_id: id}, {$set: {
@@ -117,7 +125,7 @@ Template.home.events({
 				github: event.target.github.value,
 			}
 		},{upsert: true});
-		Router.go('/matches');
+		Router.go('/profile');
 }
 });
 
