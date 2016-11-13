@@ -28,3 +28,9 @@ Accounts.onCreateUser((options, user) => {
 	user.userId = UserData.insert(userObject);
   return user;
 });
+
+Meteor.publish('allEmails',function(){
+  // you should restrict this publication to only be available to admin users
+  console.log(UserData.find({},{fields: { name: 1 }}));
+  return UserData.find({},{fields: { name: 1 }});
+});

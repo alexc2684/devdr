@@ -52,6 +52,16 @@ Template.test.helpers({
 	}
 })
 
+Meteor.subscribe('allEmails');
+
+Template.info.helpers({
+  allUsers(){
+  	console.log(UserData.find({}));
+  	return UserData.find({}); },
+  email(){
+  	console.log(this);
+  	return this.name; }
+});
 // Template.hello.onCreated(function helloOnCreated() {
 //   // counter starts at 0
 //   this.counter = new ReactiveVar(0);
@@ -74,8 +84,9 @@ Template.home.helpers({
 	'getProfile': function() {
 		// var currId = Meteor.userId();
 		// console.log(currId);
-		console.log(Meteor.UserData.find());
-		return UserData.find({_id: "dpmYyXkHm2CjmTWpT"});
+		var id = Meteor.userId();
+		console.log(UserData.findOne({_id: id}));
+		return UserData.findOne({_id: id});
 	}
 });
 
@@ -83,7 +94,11 @@ Template.home.events({
 	'submit form': function(event){
 		console.log("Submitted");
 		event.preventDefault();
-		UserData.insert({
+		console.log(Meteor.userId());
+		var id = Meteor.userId();
+		console.log(id);
+
+		UserData.update({_id: id}, {$set: {
 				name: event.target.name.value,
 				bio: event.target.bio.value,
 				devtype: {
@@ -96,6 +111,8 @@ Template.home.events({
 				skills: event.target.skills.value.split(", "),
 				interests: event.target.interests.value.split(", "),
 				github: event.target.github.value,
-		});
+			}
+		},{upsert: true});
+		Router.go('/matches');
 }
 });
