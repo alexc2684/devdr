@@ -36,6 +36,16 @@ Template.test.helpers({
 	}
 })
 
+Meteor.subscribe('allEmails');
+
+Template.info.helpers({
+  allUsers(){ 
+  	console.log(UserData.find({}));
+  	return UserData.find({}); },
+  email(){ 
+  	console.log(this);
+  	return this.name; }
+});
 // Template.hello.onCreated(function helloOnCreated() {
 //   // counter starts at 0
 //   this.counter = new ReactiveVar(0);
