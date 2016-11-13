@@ -10,6 +10,12 @@ Template.match.helpers({
 	}
 });
 
+Template.card.helpers({
+	parse: function(obj) {
+		return JSON.parse(obj)
+	}
+})
+
 // Template.hello.onCreated(function helloOnCreated() {
 //   // counter starts at 0
 //   this.counter = new ReactiveVar(0);

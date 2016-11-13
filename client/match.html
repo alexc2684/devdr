@@ -2,4 +2,17 @@
 	{{#each users}}
 		{{profile}}
 	{{/each}}
+	{{> card first="J" last="L" interests='["sleeping", "sadness", "hack"]'}}
 </template>
+
+<template name="card">
+	<p style="text-align: center; font-size:larger">
+	Name: <br>{{first}} {{last}} <br>
+	Interests: <br>{{#each parse interests}}
+		<span style= "text-align:start; padding-left: 10px; padding-right: 10px; width: auto;background-color: #f1f1f1">{{this}}</span>
+	{{/each}} <br>
+	<button type="button" style="padding-left: 10px; padding-right: 10px; border-radius: 12px; border:4px solid #CC0004; background-color: white; color:#CC0004" onclick="location.href='http://google.com';" value="Go to Google">0!</button> &ensp;
+	<button type="button" style="padding-left: 10px; padding-right: 10px; border-radius: 12px;border:4px solid #529900; background-color: white; color:#529900" onclick="location.href='http://google.com';" value="Go to Google">1!</button>
+	</p>
+</template>
+
