@@ -1,33 +1,41 @@
 <template name="home">
   {{#if currentUser}}
     {{#if Template.subscriptionsReady}}
-      <h1>Your Profile</h1>
-      <div>
-        <form>
-            Name <br />
-            <input type="text" name="name" value="{{getProfile.name}}">  <br/>
-            Bio <br />
-            <input type="text" name="bio" value="{{getProfile.bio}}">  <br/>
-            <input type = "checkbox" name = "myForm" {{checkedIf getProfile.devtype.frontend}}>Frontend<br />
-            <input type = "checkbox" name = "myForm" {{checkedIf getProfile.devtype.backend}}>Backend<br/>
-            <input type = "checkbox" name = "myForm" {{checkedIf getProfile.devtype.fullstack}}>Full Stack <br/>
-            <input type = "checkbox" name = "myForm" {{checkedIf getProfile.devtype.datascience}}>Data Science <br/>
-            <input type = "checkbox" name = "myForm" {{checkedIf getProfile.devtype.design}}>Design <br/>
-            Skills (Seperate with commas) <br />
-            <input type="text" name="skills" value="{{getProfile.skills}}">  <br/>
-            Interests (Seperate with commas) <br />
-            <input type="text" name="interests" value="{{getProfile.interests}}">  <br/>
-            Github <br />
-            <input type="text" name="github" value="{{getProfile.github}}">  <br/>
-            <input type="submit" value="Save Profile">
-        </form>
-      </div>
+      {{redirect}}
     {{/if}}
   {{else}}
-    <h1>mk team</h1>
-    <p>Tinder for nerds.</p>
+  <center>
+    <h1>Devdr</h1>
+    <p>Find the perfect partners for your project today.</p>
 
-    {{> loginButtons}}
+    <!-- {{> loginButtons}} -->
+  </center>
+    	<!-- Section: intro -->
+        <section id="intro" class="intro">
+    		<div class="slogan">
+    			<h1>This is Devdr</h1>
+    			<p>make awesome stuff </p>
+    			<a href="#about" class="btn btn-skin scroll">Learn more</a>
+    		</div>
+        </section>
+        <br/><br/><br/><br/><br/>
+
+
+
+
+
+    	<!-- /Section: intro -->
+      <!-- <footer>
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-12 col-lg-12">
+
+    					<p>Copyright &copy; 2014 Ninestars - by <a href="http://bootstraptaste.com">Bootstraptaste</a></p>
+    				</div>
+    			</div>
+    		</div>
+    	</footer> -->
+
   {{/if}}
 </template>
 <!--
@@ -37,34 +45,26 @@
 
 
 <template name="profile">
-  <p>
-    Welcome {{getProfile}}
-  </p>
-  <!-- {{#autoForm id="afInsertDemo" type="insert" collection=Collections.UserData}}
-    <div class="form-group {{#if afFieldIsInvalid name='Name'}}has-error{{/if}}">
-      <label class="control-label">{{afFieldLabelText name='Name'}}</label>
-      {{> afFieldInput name='Name'}}
-      {{#if afFieldIsInvalid name='Name'}}
-      <span class="help-block">{{{afFieldMessage name='Name'}}}</span>
-      {{/if}}
-    </div>
-    <div class="form-group {{#if afFieldIsInvalid name='Bio'}}has-error{{/if}}">
-      <label class="control-label">{{afFieldLabelText name='Bio'}}</label>
-      {{> afFieldInput name='Bio'}}
-      {{#if afFieldIsInvalid name='Bio'}}
-      <span class="help-block">{{{afFieldMessage name='Bio'}}}</span>
-      {{/if}}
-    </div>
-    <div class="form-group {{#if afFieldIsInvalid name='DevType'}}has-error{{/if}}">
-      <label class="control-label">{{afFieldLabelText name='DevType'}}</label>
-      {{> afFieldInput name='DevType'}}
-      {{#if afFieldIsInvalid name='DevType'}}
-      <span class="help-block">{{{afFieldMessage name='DevType'}}}</span>
-      {{/if}}
-    </div>
-    <div class="form-group">
-      <button type="submit" class="btn btn-primary">Add Person</button>
-      <button type="reset" class="btn btn-default">Reset Form</button>
-    </div>
-  {{/autoForm}} -->
+  <h1>Your Profile</h1>
+  <div>
+    <form>
+        Name <br />
+        <input type="text" name="name" value="{{getProfile.name}}">  <br/>
+        Bio <br />
+        <input type="text" name="bio" value="{{getProfile.bio}}">  <br/>
+        <input type = "checkbox" name = "myForm" {{checkedIf getProfile.devtype.frontend}}>Frontend<br />
+        <input type = "checkbox" name = "myForm" {{checkedIf getProfile.devtype.backend}}>Backend<br/>
+        <input type = "checkbox" name = "myForm" {{checkedIf getProfile.devtype.fullstack}}>Full Stack <br/>
+        <input type = "checkbox" name = "myForm" {{checkedIf getProfile.devtype.datascience}}>Data Science <br/>
+        <input type = "checkbox" name = "myForm" {{checkedIf getProfile.devtype.design}}>Design <br/>
+        Skills (Seperate with commas) <br />
+        <input type="text" name="skills" value="{{getProfile.skills}}">  <br/>
+        Interests (Seperate with commas) <br />
+        <input type="text" name="interests" value="{{getProfile.interests}}">  <br/>
+        Github <br />
+        <input type="text" name="github" value="{{getProfile.github}}">  <br/>
+        <input type="submit" value="Save Profile">
+    </form>
+  </div>
+
 </template>
