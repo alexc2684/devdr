@@ -1,34 +1,24 @@
 <template name="home">
-  {{#if currentUser}}
-    {{#if Template.subscriptionsReady}}
-      <h1>Your Profile</h1>
-      <div>
-        <form>
-            Name <br />
-            <input type="text" name="name" value="{{getProfile.name}}">  <br/>
-            Bio <br />
-            <input type="text" name="bio" value="{{getProfile.bio}}">  <br/>
-            <input type = "checkbox" name = "myForm" {{checkedIf getProfile.devtype.frontend}}>Frontend<br />
-            <input type = "checkbox" name = "myForm" {{checkedIf getProfile.devtype.backend}}>Backend<br/>
-            <input type = "checkbox" name = "myForm" {{checkedIf getProfile.devtype.fullstack}}>Full Stack <br/>
-            <input type = "checkbox" name = "myForm" {{checkedIf getProfile.devtype.datascience}}>Data Science <br/>
-            <input type = "checkbox" name = "myForm" {{checkedIf getProfile.devtype.design}}>Design <br/>
-            Skills (Seperate with commas) <br />
-            <input type="text" name="skills" value="{{getProfile.skills}}">  <br/>
-            Interests (Seperate with commas) <br />
-            <input type="text" name="interests" value="{{getProfile.interests}}">  <br/>
-            Github <br />
-            <input type="text" name="github" value="{{getProfile.github}}">  <br/>
-            <input type="submit" value="Save Profile">
-        </form>
-      </div>
-    {{/if}}
-  {{else}}
-    <h1>mk team</h1>
-    <p>Tinder for nerds.</p>
+  <center>
+    <!-- <h1>Devdr</h1>
+    <p></p> -->
 
-    {{> loginButtons}}
-  {{/if}}
+    <!-- {{> loginButtons}} -->
+  </center>
+    	<!-- Section: intro -->
+        <section id="intro" class="intro">
+          <center>
+            <br /><br />
+            <h1 style="color:white">Devdr</h1>
+            <p style="color:white">Find the perfect partners for your project today.</p>
+          </center>
+
+    		<div class="slogan">
+
+    			<a href="#about" class="btn btn-skin scroll"></a>
+    		</div>
+        </section>
+        <br/><br/><br/><br/><br/>
 </template>
 <!--
 <template name="profileForm">
